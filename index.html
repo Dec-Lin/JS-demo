@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DIV</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <span>请为下面的DIV设置样式：</span>
+        <input id="set" type="button" value="点击设置">
+        <div id="div"></div>
+    </div>
+    <!--wrap结束-->
+
+    <div id="setDiv" class="setDiv">
+        <ul>
+            <li>请选择背景色:
+                <input id="red" type="button" value="红">
+                <input id="yellow" type="button" value="黄">
+                <input id="blue" type="button" value="蓝">
+            </li>
+            <li>请选择宽(px):
+                <input id="w_200" type="button" value="200">
+                <input id="w_300" type="button" value="300">
+                <input id="w_400" type="button" value="400">
+            </li>
+            <li>请选择高(px):
+                <input id="h_200" type="button" value="200">
+                <input id="h_300" type="button" value="300">
+                <input id="h_400" type="button" value="400">
+            </li>
+        </ul>
+        <div class="setRec">
+            <input id="rec" type="button" value="恢复">
+            <input id="cfm" type="button" value="确定">
+        </div>
+    </div>
+    <!--setDiv结束-->
+    <script>
+        document.getElementById('set').onclick = function () {
+            document.getElementById('setDiv').style.display = 'inline-block'
+        }
+
+        var div = document.getElementById('div')
+
+        document.getElementById('red').onclick = function () {
+            div.style.background = 'red'
+        }
+        document.getElementById('yellow').onclick = function () {
+            div.style.background = 'yellow'
+        }
+        document.getElementById('blue').onclick = function () {
+            div.style.background = 'blue'
+        }
+
+        document.getElementById('w_200').onclick = function () {
+            div.style.width = '200px'
+        }
+        document.getElementById('w_300').onclick = function () {
+            div.style.width = '300px'
+        }
+        document.getElementById('w_400').onclick = function () {
+            div.style.width = '400px'
+        }
+
+        document.getElementById('h_200').onclick = function () {
+            div.style.height = '200px'
+        }
+        document.getElementById('h_300').onclick = function () {
+            div.style.height = '300px'
+        }
+        document.getElementById('h_400').onclick = function () {
+            div.style.height = '400px'
+        }
+
+
+        document.getElementById('rec').onclick = function () {
+            div.style.width = '100px'
+            div.style.height = '100px'
+            div.style.background = 'white'
+        }
+        document.getElementById('cfm').onclick = function () {
+            document.getElementById('setDiv').style.display = 'none'
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+*{margin:0;padding:0;}
+li{list-style:none;}
+#div{ width:100px;height:100px;border: 3px solid black;margin-top:50px;}
+.wrap{ margin-top:100px;margin-left:100px;position:relative;}
+span{font-weight:bold;font-size:20px;}
+#set{
+    background: red;
+    border:none;
+    padding:10px 25px;
+    color:white;
+    font-size:10px;
+}
+.setDiv{
+    border: 15px solid rgb(161,154,164);
+    background: #fff;
+    display:inline-block;
+    padding: 10px 40px;
+    position:absolute;
+    right:300px;
+    bottom:300px;
+    display: none;
+}
+ul li{margin-bottom:15px;}
+
+ul li:nth-child(1) input{
+    width:33px;height:30px;
+}
+ul li:nth-child(1) input:nth-child(1){
+    background: red;
+    border:0.5px solid gray;
+}
+ul li:nth-child(1) input:nth-child(2){
+    background: yellow;
+    border:0.5px solid gray;
+}
+ul li:nth-child(1) input:nth-child(3){
+    background: blue;
+    border:0.5px solid gray;
+}
+ul li:nth-child(2) input{
+    width:33px;height:30px;
+    background: rgb(241,241,241);
+    border:0.5px solid gray;
+}
+ul li:nth-child(2) input:hover{
+   background: pink;
+}
+ul li:nth-child(3) input{
+    width:33px;height:30px;
+    background: rgb(241,241,241);
+    border:0.5px solid gray;
+}
+ul li:nth-child(3) input:hover{
+   background: pink;
+}
+.setRec{
+    margin-left:30px;
+}
+.setRec input{
+    width:60px;
+    height:30px;
+    background: rgb(0,45,83);
+    color:white;
+    border: 0.5px solid gray;
+}
